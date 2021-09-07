@@ -60,7 +60,8 @@ export default function Squares() {
           // Nasty bug! We should map over a slice of state, instead of 'listOfSquareIds'.
           // We might say: "it works, though!" But if the list of squares is not state,
           // we could never add squares, change squares or remove squares in the future. Fix!
-          listOfSquareIds.map(id =>
+          squares.map(id =>
+            //listOfSquareIds.map
             <div
               id={id}
               key={id}
